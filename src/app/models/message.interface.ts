@@ -1,0 +1,9 @@
+export type Root = Root2[]
+
+export interface Root2 {
+   readonly id : number
+  createdAt: string
+  receiver: string
+  sender: string
+  content: string
+}
