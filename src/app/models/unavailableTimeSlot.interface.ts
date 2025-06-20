@@ -1,6 +1,6 @@
-export type Root = Root2[]
 
-export interface Root2 {
+
+export interface  UnavailableTimeSlot {
   readonly id : number
   startDate: string
   endDate: string

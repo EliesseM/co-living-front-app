@@ -1,6 +1,10 @@
-export type Root = Root2[]
+import { Equipment } from "./equipment.interface"
+import { Image } from "./image.interface"
+import { Service } from "./service.interface"
+import User from "./user.interface"
 
-export interface Root2 {
+
+export interface  Announcement {
  readonly id: number
   title: string
   description: string
@@ -12,30 +16,8 @@ export interface Root2 {
   maxClient: number
   dailyPrice: number
   imageCover: string
-  owner: Owner
+  owner?: User
   images: Image[]
   services: Service[]
-  equipment: Equipment[]
-}
-
-export interface Owner {
- readonly id: number
-  email: string
-}
-
-export interface Image {
- readonly id: number
-  imageUrl: string
-}
-
-export interface Service {
- readonly id: number
-  title: string
-  description: string
-}
-
-export interface Equipment {
- readonly id: number
-  title: string
-  description: string
+  equipments: Equipment[]
 }

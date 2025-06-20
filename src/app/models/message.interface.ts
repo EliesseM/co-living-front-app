@@ -1,6 +1,6 @@
-export type Root = Root2[]
 
-export interface Root2 {
+
+export interface Message {
    readonly id : number
   createdAt: string
   receiver: string

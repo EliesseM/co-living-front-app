@@ -1,6 +1,7 @@
-export type Root = Root2[]
 
-export interface Root2 {
+
+export interface Equipment {
    readonly id : number
   title: string
+  description: string
 }

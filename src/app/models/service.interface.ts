@@ -1,6 +1,7 @@
-export type Root = Root2[]
 
-export interface Root2 {
+
+export interface Service {
    readonly id : number
   title: string
+  description: string
 }
