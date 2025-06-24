@@ -4,12 +4,17 @@
     <h2>{{ announcement.title }}</h2>
     <p>{{ announcement.description }}</p>
 
-    <img class="w-25" [src]="announcement.imageCover" [alt]="announcement.title" />
+    <img
+      class="w-25"
+      [src]="announcement.imageCover"
+      [alt]="announcement.title"
+    />
     <p [class.text-green-600]="announcement.dailyPrice < 50">
       {{
         announcement.dailyPrice | currency : "EUR" : "symbol" : "1.2-2" : "fr"
       }}
     </p>
+    <a [routerLink]="['/detail', announcement.id]">Voir détail</a>
   </div>
   }
   {{ title }}
